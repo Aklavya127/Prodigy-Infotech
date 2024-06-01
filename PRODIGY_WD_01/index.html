@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe Coffee</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <label for="logo" class="logo">Cafe Coffee</label>
+        <ul class="menu">
+            <li><a class="active" href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#feedback">Feedback</a></li>
+        </ul>
+        <label id="icon">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </label>
+    </nav>
+    <div class="content">
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Welcome to Cafe Coffee</h1>
+                <p>Your perfect place to relax and enjoy a cup of coffee.</p>
+                <a href="#about" class="btn">Learn More</a>
+            </div>
+        </section>
+        <section class="about" id="about">
+            <h2>About Us</h2>
+            <p>At Cafe Coffee, we pride ourselves on providing the best coffee experience in town. Our beans are sourced
+                from the finest growers around the world and roasted to perfection. Whether you're here for a quick
+                espresso or a leisurely afternoon with friends, we have something for everyone.</p>
+        </section>
+        <section class="services" id="services">
+            <h2>Our Services</h2>
+            <ul>
+                <li>Espresso and Specialty Coffees</li>
+                <li>Freshly Baked Pastries</li>
+                <li>Comfortable Seating Area</li>
+                <li>Free Wi-Fi</li>
+                <li>Private Events and Catering</li>
+            </ul>
+        </section>
+        <section class="contact" id="contact">
+            <h2>Contact Us</h2>
+            <form action="submit_form.php" method="post">
+                <label for="name"><b>Name:</b></label>
+                <input type="text" id="name" name="name" required>
+                <label for="email"><b>Email:</b></label>
+                <input type="email" id="email" name="email" required>
+                <label for="contact-no"><b>Contact No:</b></label>
+                <input type="text" id="contact-no" name="contact-no" required>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+        <section class="feedback" id="feedback">
+            <h2>Feedback</h2>
+            <p>We value your feedback. Please let us know what you think about our services and how we can improve.</p>
+            <form action="submit_feedback.php" method="post">
+                <textarea id="feedback" name="feedback" required></textarea>
+                <button type="submit"><b>Submit</b></button>
+            </form>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
